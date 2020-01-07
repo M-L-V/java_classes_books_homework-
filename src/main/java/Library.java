@@ -15,10 +15,11 @@ public class Library {
     }
 
     public void addBookToStock(Book book){
+        if (stock.size() < this.capacity)
         stock.add(book);
     }
 
     public int getCapacity() {
-        return this.capacity; 
+        return this.capacity;
     }
 }
