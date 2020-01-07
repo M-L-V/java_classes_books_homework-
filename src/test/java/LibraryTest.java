@@ -29,5 +29,16 @@ public class LibraryTest {
         assertEquals(1, library.stockCount());
     }
 
+    @Test
+    public void libraryDoesNotOverstock() {
+        library.addBookToStock(book);
+        library.addBookToStock(book);
+        library.addBookToStock(book);
+        library.addBookToStock(book);
+        assertEquals(3, library.stockCount());
+    }
+
 
 }
+
+
