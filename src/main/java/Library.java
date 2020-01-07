@@ -11,4 +11,8 @@ public class Library {
     public int stockCount() {
         return stock.size();
     }
+
+    public void addBookToStock(Book book){
+        stock.add(book);
+    }
 }
