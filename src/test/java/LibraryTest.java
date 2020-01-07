@@ -10,12 +10,17 @@ public class LibraryTest {
 
     @Before
     public void before(){
-        library = new Library();
+        library = new Library(30);
     }
 
     @Test
     public void libraryHasNoBooksAtStart(){
         assertEquals(0, library.stockCount());
+    }
+
+    @Test
+    public void libraryHasCapacity(){
+        assertEquals(30, library.getCapacity());
     }
 
     @Test
